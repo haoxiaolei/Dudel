@@ -1,0 +1,211 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Dudel */ = {
+		activeExec = 0;
+		executables = (
+			EA84770213BC4BDF00FCAE71 /* Dudel */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* DudelViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 599}}";
+			sepNavSelRange = "{260, 17}";
+			sepNavVisRange = "{0, 1031}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* DudelViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 2041}}";
+			sepNavSelRange = "{2973, 13}";
+			sepNavVisRange = "{2016, 1010}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = EA84770213BC4BDF00FCAE71 /* Dudel */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Dudel */;
+		addToTargets = (
+		);
+		codeSenseManager = EA84771313BC4BFE00FCAE71 /* Code sense */;
+		executables = (
+			EA84770213BC4BDF00FCAE71 /* Dudel */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					808,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 331107295;
+			PBXWorkspaceStateSaveDate = 331107295;
+		};
+		perUserProjectItems = {
+			EA8477F213BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F213BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F313BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F313BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F413BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F413BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F513BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F513BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F613BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F613BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F713BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F713BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F813BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F813BC770C00FCAE71 /* PBXTextBookmark */;
+		};
+		sourceControlManager = EA84771213BC4BFE00FCAE71 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	EA84770213BC4BDF00FCAE71 /* Dudel */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Dudel;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	EA84771213BC4BFE00FCAE71 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	EA84771313BC4BFE00FCAE71 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	EA84771713BC4D0200FCAE71 /* DudelView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 599}}";
+			sepNavSelRange = "{145, 28}";
+			sepNavVisRange = "{0, 373}";
+		};
+	};
+	EA84771813BC4D0200FCAE71 /* DudelView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 637}}";
+			sepNavSelRange = "{431, 40}";
+			sepNavVisRange = "{19, 760}";
+		};
+	};
+	EA84771B13BC584B00FCAE71 /* Drawable.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 599}}";
+			sepNavSelRange = "{177, 0}";
+			sepNavVisRange = "{0, 184}";
+		};
+	};
+	EA84771C13BC5F8F00FCAE71 /* Tool.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 599}}";
+			sepNavSelRange = "{609, 23}";
+			sepNavVisRange = "{0, 773}";
+		};
+	};
+	EA8477F213BC770C00FCAE71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771B13BC584B00FCAE71 /* Drawable.h */;
+		name = "Drawable.h: 13";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 184;
+		vrLoc = 0;
+	};
+	EA8477F313BC770C00FCAE71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* DudelViewController.m */;
+		name = "DudelViewController.m: 152";
+		rLen = 13;
+		rLoc = 2973;
+		rType = 0;
+		vrLen = 1010;
+		vrLoc = 2016;
+	};
+	EA8477F413BC770C00FCAE71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771C13BC5F8F00FCAE71 /* Tool.h */;
+		name = "Tool.h: 29";
+		rLen = 23;
+		rLoc = 609;
+		rType = 0;
+		vrLen = 773;
+		vrLoc = 0;
+	};
+	EA8477F513BC770C00FCAE71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* DudelViewController.h */;
+		name = "DudelViewController.h: 14";
+		rLen = 17;
+		rLoc = 260;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 0;
+	};
+	EA8477F613BC770C00FCAE71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771713BC4D0200FCAE71 /* DudelView.h */;
+		name = "DudelView.h: 11";
+		rLen = 28;
+		rLoc = 145;
+		rType = 0;
+		vrLen = 373;
+		vrLoc = 0;
+	};
+	EA8477F713BC770C00FCAE71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771813BC4D0200FCAE71 /* DudelView.m */;
+		name = "DudelView.m: 26";
+		rLen = 40;
+		rLoc = 431;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 19;
+	};
+	EA8477F813BC770C00FCAE71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771813BC4D0200FCAE71 /* DudelView.m */;
+		name = "DudelView.m: 26";
+		rLen = 40;
+		rLoc = 431;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 19;
+	};
+}
