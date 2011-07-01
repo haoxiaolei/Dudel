@@ -44,7 +44,7 @@
 					<object class="IBUIToolbar" id="330218849">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">266</int>
-						<string key="NSFrame">{{0, 857}, {768, 44}}</string>
+						<string key="NSFrame">{{0, 960}, {768, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -74,6 +74,11 @@
 							</object>
 							<object class="IBUIBarButtonItem" id="410528998">
 								<string key="IBUITitle">Pencil</string>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<reference key="IBUIToolbar" ref="330218849"/>
+							</object>
+							<object class="IBUIBarButtonItem" id="212176477">
+								<string key="IBUITitle">Text</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<reference key="IBUIToolbar" ref="330218849"/>
 							</object>
@@ -161,6 +166,62 @@
 					</object>
 					<int key="connectionID">23</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">touchTextItem:</string>
+						<reference key="source" ref="212176477"/>
+						<reference key="destination" ref="841351856"/>
+					</object>
+					<int key="connectionID">27</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">textButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="212176477"/>
+					</object>
+					<int key="connectionID">28</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">freehandButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="567763097"/>
+					</object>
+					<int key="connectionID">29</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">lineButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="768963085"/>
+					</object>
+					<int key="connectionID">30</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">rectangleButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="674067436"/>
+					</object>
+					<int key="connectionID">31</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">ellipseButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="296529833"/>
+					</object>
+					<int key="connectionID">32</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">pencilButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="410528998"/>
+					</object>
+					<int key="connectionID">33</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -201,6 +262,7 @@
 							<reference ref="296529833"/>
 							<reference ref="410528998"/>
 							<reference ref="567763097"/>
+							<reference ref="212176477"/>
 						</object>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -229,6 +291,11 @@
 						<reference key="object" ref="567763097"/>
 						<reference key="parent" ref="330218849"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">25</int>
+						<reference key="object" ref="212176477"/>
+						<reference key="parent" ref="330218849"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -242,7 +309,9 @@
 					<string>2.CustomClassName</string>
 					<string>2.IBEditorWindowLastContentRect</string>
 					<string>2.IBPluginDependency</string>
+					<string>25.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
+					<string>6.IBViewBoundsToFrameTransform</string>
 					<string>7.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
@@ -254,9 +323,13 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>DudelView</string>
-					<string>{{497, 58}, {783, 922}}</string>
+					<string>{{497, 56}, {783, 924}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAxGDAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -278,7 +351,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">23</int>
+			<int key="maxID">33</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -314,9 +387,11 @@
 							<string>touchLineItem:</string>
 							<string>touchPencilItem:</string>
 							<string>touchRectangleItem:</string>
+							<string>touchTextItem:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -333,6 +408,7 @@
 							<string>touchLineItem:</string>
 							<string>touchPencilItem:</string>
 							<string>touchRectangleItem:</string>
+							<string>touchTextItem:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -356,6 +432,10 @@
 								<string key="name">touchRectangleItem:</string>
 								<string key="candidateClassName">id</string>
 							</object>
+							<object class="IBActionInfo">
+								<string key="name">touchTextItem:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
@@ -369,11 +449,13 @@
 							<string>lineButton</string>
 							<string>pencilButton</string>
 							<string>rectangleButton</string>
+							<string>textButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
 							<string>DudelView</string>
+							<string>UIBarButtonItem</string>
 							<string>UIBarButtonItem</string>
 							<string>UIBarButtonItem</string>
 							<string>UIBarButtonItem</string>
@@ -392,6 +474,7 @@
 							<string>lineButton</string>
 							<string>pencilButton</string>
 							<string>rectangleButton</string>
+							<string>textButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -421,6 +504,10 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">rectangleButton</string>
+								<string key="candidateClassName">UIBarButtonItem</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">textButton</string>
 								<string key="candidateClassName">UIBarButtonItem</string>
 							</object>
 						</object>

@@ -18,6 +18,9 @@
 		EA4E583913BD4FA800BC0665 /* PencilTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */; };
 		EA4E583E13BD545000BC0665 /* PathDrawingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E583D13BD545000BC0665 /* PathDrawingInfo.m */; };
 		EA84771913BC4D0200FCAE71 /* DudelView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA84771813BC4D0200FCAE71 /* DudelView.m */; };
+		EA8D1E9413BD959C005A12B2 /* TextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8D1E9313BD959C005A12B2 /* TextTool.m */; };
+		EA8D1E9713BDAFDE005A12B2 /* TextDrawingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8D1E9613BDAFDE005A12B2 /* TextDrawingInfo.m */; };
+		EA8D1E9F13BDC481005A12B2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D1E9E13BDC481005A12B2 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,11 @@
 		EA84771813BC4D0200FCAE71 /* DudelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DudelView.m; sourceTree = "<group>"; };
 		EA84771B13BC584B00FCAE71 /* Drawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
 		EA84771C13BC5F8F00FCAE71 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		EA8D1E9213BD959C005A12B2 /* TextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTool.h; sourceTree = "<group>"; };
+		EA8D1E9313BD959C005A12B2 /* TextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTool.m; sourceTree = "<group>"; };
+		EA8D1E9513BDAFDE005A12B2 /* TextDrawingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextDrawingInfo.h; sourceTree = "<group>"; };
+		EA8D1E9613BDAFDE005A12B2 /* TextDrawingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextDrawingInfo.m; sourceTree = "<group>"; };
+		EA8D1E9E13BDC481005A12B2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				EA8D1E9F13BDC481005A12B2 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +84,10 @@
 				EA4E583B13BD52A100BC0665 /* SynthesizeSingleton.h */,
 				EA4E583C13BD545000BC0665 /* PathDrawingInfo.h */,
 				EA4E583D13BD545000BC0665 /* PathDrawingInfo.m */,
+				EA8D1E9213BD959C005A12B2 /* TextTool.h */,
+				EA8D1E9313BD959C005A12B2 /* TextTool.m */,
+				EA8D1E9513BDAFDE005A12B2 /* TextDrawingInfo.h */,
+				EA8D1E9613BDAFDE005A12B2 /* TextDrawingInfo.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA8D1E9E13BDC481005A12B2 /* CoreText.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -195,6 +209,8 @@
 				EA84771913BC4D0200FCAE71 /* DudelView.m in Sources */,
 				EA4E583913BD4FA800BC0665 /* PencilTool.m in Sources */,
 				EA4E583E13BD545000BC0665 /* PathDrawingInfo.m in Sources */,
+				EA8D1E9413BD959C005A12B2 /* TextTool.m in Sources */,
+				EA8D1E9713BDAFDE005A12B2 /* TextDrawingInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

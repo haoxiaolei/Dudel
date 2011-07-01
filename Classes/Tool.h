@@ -33,6 +33,6 @@
 - (UIColor *)strokeColor;
 - (UIColor *)fillColor;
 - (CGFloat)strokeWidth;
-
+- (UIFont *)font;
 @end
 

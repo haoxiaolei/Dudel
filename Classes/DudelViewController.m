@@ -10,9 +10,10 @@
 
 #import "DudelView.h"
 #import "PencilTool.h"
+#import "TextTool.h"
 
 @implementation DudelViewController
-@synthesize currentTool, fillColor, strokeColor, strokeWidth;
+@synthesize currentTool, fillColor, strokeColor, strokeWidth, font;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -41,6 +42,7 @@
 	self.fillColor = [UIColor lightGrayColor];
 	self.strokeColor = [UIColor blackColor];
 	self.strokeWidth = 2.0;
+	self.font = [UIFont systemFontOfSize:24.0];
 }
 
 
@@ -95,6 +97,12 @@
 - (IBAction)touchPencilItem:(id)sender
 {
 	self.currentTool = [PencilTool sharedPencilTool];
+}
+
+- (IBAction)touchTextItem:(id)sender
+{
+	self.currentTool = [TextTool sharedTextTool];
+	[self deselectAllToolButtons];
 }
 
 - (void)deselectAllToolButtons
