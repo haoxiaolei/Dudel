@@ -1,5 +1,12 @@
 // !$*UTF8*$!
 {
+	1D3623250D0F684500981E51 /* DudelAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 845}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1462}";
+		};
+	};
 	1D6058900D05DD3D006BFB54 /* Dudel */ = {
 		activeExec = 0;
 		executables = (
@@ -8,16 +15,16 @@
 	};
 	28D7ACF60DDB3853001CB0EB /* DudelViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {986, 599}}";
-			sepNavSelRange = "{260, 17}";
+			sepNavIntBoundsRect = "{{0, 0}, {986, 594}}";
+			sepNavSelRange = "{304, 0}";
 			sepNavVisRange = "{0, 1031}";
 		};
 	};
 	28D7ACF70DDB3853001CB0EB /* DudelViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {986, 2041}}";
-			sepNavSelRange = "{2973, 13}";
-			sepNavVisRange = "{2016, 1010}";
+			sepNavIntBoundsRect = "{{0, 0}, {986, 2067}}";
+			sepNavSelRange = "{2912, 37}";
+			sepNavVisRange = "{2259, 895}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -25,6 +32,9 @@
 		activeExecutable = EA84770213BC4BDF00FCAE71 /* Dudel */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Dudel */;
 		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Dudel */,
+		);
+		breakpoints = (
 		);
 		codeSenseManager = EA84771313BC4BFE00FCAE71 /* Code sense */;
 		executables = (
@@ -38,7 +48,7 @@
 					20,
 					808,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -53,21 +63,495 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 331107295;
-			PBXWorkspaceStateSaveDate = 331107295;
+			PBXPerProjectTemplateStateSaveDate = 331173635;
+			PBXWorkspaceStateSaveDate = 331173635;
 		};
 		perUserProjectItems = {
-			EA8477F213BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F213BC770C00FCAE71 /* PBXTextBookmark */;
-			EA8477F313BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F313BC770C00FCAE71 /* PBXTextBookmark */;
-			EA8477F413BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F413BC770C00FCAE71 /* PBXTextBookmark */;
-			EA8477F513BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F513BC770C00FCAE71 /* PBXTextBookmark */;
-			EA8477F613BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F613BC770C00FCAE71 /* PBXTextBookmark */;
-			EA8477F713BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F713BC770C00FCAE71 /* PBXTextBookmark */;
-			EA8477F813BC770C00FCAE71 /* PBXTextBookmark */ = EA8477F813BC770C00FCAE71 /* PBXTextBookmark */;
+			EA4E582B13BD4F0600BC0665 /* PBXTextBookmark */ = EA4E582B13BD4F0600BC0665 /* PBXTextBookmark */;
+			EA4E583213BD4F7800BC0665 /* XCBuildMessageTextBookmark */ = EA4E583213BD4F7800BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E583313BD4F7800BC0665 /* PBXTextBookmark */ = EA4E583313BD4F7800BC0665 /* PBXTextBookmark */;
+			EA4E584113BD573800BC0665 /* PBXTextBookmark */ = EA4E584113BD573800BC0665 /* PBXTextBookmark */;
+			EA4E584213BD573800BC0665 /* XCBuildMessageTextBookmark */ = EA4E584213BD573800BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E584313BD573800BC0665 /* PBXTextBookmark */ = EA4E584313BD573800BC0665 /* PBXTextBookmark */;
+			EA4E584C13BD59DE00BC0665 /* XCBuildMessageTextBookmark */ = EA4E584C13BD59DE00BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E584D13BD59DE00BC0665 /* PBXTextBookmark */ = EA4E584D13BD59DE00BC0665 /* PBXTextBookmark */;
+			EA4E585013BD5A9A00BC0665 /* XCBuildMessageTextBookmark */ = EA4E585013BD5A9A00BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E585113BD5A9A00BC0665 /* PBXTextBookmark */ = EA4E585113BD5A9A00BC0665 /* PBXTextBookmark */;
+			EA4E586613BD601300BC0665 /* XCBuildMessageTextBookmark */ = EA4E586613BD601300BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E586713BD601300BC0665 /* PBXTextBookmark */ = EA4E586713BD601300BC0665 /* PBXTextBookmark */;
+			EA4E587013BD642800BC0665 /* XCBuildMessageTextBookmark */ = EA4E587013BD642800BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E587113BD642800BC0665 /* PBXTextBookmark */ = EA4E587113BD642800BC0665 /* PBXTextBookmark */;
+			EA4E587A13BD67F700BC0665 /* XCBuildMessageTextBookmark */ = EA4E587A13BD67F700BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E587B13BD67F700BC0665 /* PBXTextBookmark */ = EA4E587B13BD67F700BC0665 /* PBXTextBookmark */;
+			EA4E588013BD680E00BC0665 /* PBXTextBookmark */ = EA4E588013BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588213BD680E00BC0665 /* PBXTextBookmark */ = EA4E588213BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588313BD680E00BC0665 /* PBXTextBookmark */ = EA4E588313BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588413BD680E00BC0665 /* PBXTextBookmark */ = EA4E588413BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588513BD680E00BC0665 /* PBXTextBookmark */ = EA4E588513BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588713BD680E00BC0665 /* PBXTextBookmark */ = EA4E588713BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588913BD680E00BC0665 /* PBXTextBookmark */ = EA4E588913BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588A13BD680E00BC0665 /* PBXTextBookmark */ = EA4E588A13BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588B13BD680E00BC0665 /* PBXTextBookmark */ = EA4E588B13BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588C13BD680E00BC0665 /* PBXTextBookmark */ = EA4E588C13BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588D13BD680E00BC0665 /* PBXTextBookmark */ = EA4E588D13BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588E13BD680E00BC0665 /* PBXTextBookmark */ = EA4E588E13BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E588F13BD680E00BC0665 /* PBXTextBookmark */ = EA4E588F13BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E589013BD680E00BC0665 /* PBXTextBookmark */ = EA4E589013BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E589113BD680E00BC0665 /* PBXTextBookmark */ = EA4E589113BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E589213BD680E00BC0665 /* PBXTextBookmark */ = EA4E589213BD680E00BC0665 /* PBXTextBookmark */;
+			EA4E589A13BD685B00BC0665 /* PBXTextBookmark */ = EA4E589A13BD685B00BC0665 /* PBXTextBookmark */;
+			EA4E589F13BD686D00BC0665 /* PBXTextBookmark */ = EA4E589F13BD686D00BC0665 /* PBXTextBookmark */;
+			EA4E58A013BD686D00BC0665 /* PBXTextBookmark */ = EA4E58A013BD686D00BC0665 /* PBXTextBookmark */;
+			EA4E58A913BD69C600BC0665 /* XCBuildMessageTextBookmark */ = EA4E58A913BD69C600BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E58AA13BD69C600BC0665 /* PBXTextBookmark */ = EA4E58AA13BD69C600BC0665 /* PBXTextBookmark */;
+			EA4E58AD13BD69DA00BC0665 /* XCBuildMessageTextBookmark */ = EA4E58AD13BD69DA00BC0665 /* XCBuildMessageTextBookmark */;
+			EA4E58AE13BD69DA00BC0665 /* PBXTextBookmark */ = EA4E58AE13BD69DA00BC0665 /* PBXTextBookmark */;
+			EA8477F213BC770C00FCAE71 = EA8477F213BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F313BC770C00FCAE71 = EA8477F313BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F413BC770C00FCAE71 = EA8477F413BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F513BC770C00FCAE71 = EA8477F513BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F613BC770C00FCAE71 = EA8477F613BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F713BC770C00FCAE71 = EA8477F713BC770C00FCAE71 /* PBXTextBookmark */;
+			EA8477F813BC770C00FCAE71 = EA8477F813BC770C00FCAE71 /* PBXTextBookmark */;
 		};
 		sourceControlManager = EA84771213BC4BFE00FCAE71 /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	EA4E582B13BD4F0600BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771813BC4D0200FCAE71 /* DudelView.m */;
+		name = "DudelView.m: 26";
+		rLen = 40;
+		rLoc = 431;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 19;
+	};
+	EA4E583213BD4F7800BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Control reaches end of non-void function";
+		fRef = EA84771813BC4D0200FCAE71 /* DudelView.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 32;
+		rType = 1;
+	};
+	EA4E583313BD4F7800BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771813BC4D0200FCAE71 /* DudelView.m */;
+		name = "DudelView.m: 32";
+		rLen = 0;
+		rLoc = 604;
+		rType = 0;
+		vrLen = 319;
+		vrLoc = 344;
+	};
+	EA4E583713BD4FA800BC0665 /* PencilTool.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 569}}";
+			sepNavSelRange = "{173, 42}";
+			sepNavVisRange = "{0, 374}";
+			sepNavWindowFrame = "{{15, 57}, {1051, 944}}";
+		};
+	};
+	EA4E583813BD4FA800BC0665 /* PencilTool.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1041, 1313}}";
+			sepNavSelRange = "{253, 0}";
+			sepNavVisRange = "{0, 1024}";
+		};
+	};
+	EA4E583B13BD52A100BC0665 /* SynthesizeSingleton.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 780}}";
+			sepNavSelRange = "{133, 52}";
+			sepNavVisRange = "{3, 741}";
+		};
+	};
+	EA4E583C13BD545000BC0665 /* PathDrawingInfo.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 594}}";
+			sepNavSelRange = "{641, 0}";
+			sepNavVisRange = "{0, 641}";
+		};
+	};
+	EA4E583D13BD545000BC0665 /* PathDrawingInfo.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {986, 637}}";
+			sepNavSelRange = "{1013, 0}";
+			sepNavVisRange = "{0, 1016}";
+		};
+	};
+	EA4E584113BD573800BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771813BC4D0200FCAE71 /* DudelView.m */;
+		name = "DudelView.m: 33";
+		rLen = 0;
+		rLoc = 604;
+		rType = 0;
+		vrLen = 295;
+		vrLoc = 344;
+	};
+	EA4E584213BD573800BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Method definition for '+sharedPencilTool' not found";
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 104;
+		rType = 1;
+	};
+	EA4E584313BD573800BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 15";
+		rLen = 0;
+		rLoc = 2578;
+		rType = 0;
+		vrLen = 234;
+		vrLoc = 3;
+	};
+	EA4E584C13BD59DE00BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incomplete implementation of class 'PencilTool'";
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 104;
+		rType = 1;
+	};
+	EA4E584D13BD59DE00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 16";
+		rLen = 0;
+		rLoc = 297;
+		rType = 0;
+		vrLen = 282;
+		vrLoc = 20;
+	};
+	EA4E585013BD5A9A00BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected '=', ',', ';', 'asm' or '__attribute__' before '{' token";
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 14;
+		rType = 1;
+	};
+	EA4E585113BD5A9A00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 15";
+		rLen = 0;
+		rLoc = 252;
+		rType = 0;
+		vrLen = 409;
+		vrLoc = 33;
+	};
+	EA4E586613BD601300BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Class 'PencilTool' does not fully implement the 'Tool' protocol";
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 103;
+		rType = 1;
+	};
+	EA4E586713BD601300BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 54";
+		rLen = 0;
+		rLoc = 2578;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 858;
+	};
+	EA4E587013BD642800BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Return from incompatible pointer type";
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 14;
+		rType = 1;
+	};
+	EA4E587113BD642800BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 15";
+		rLen = 0;
+		rLoc = 253;
+		rType = 0;
+		vrLen = 384;
+		vrLoc = 120;
+	};
+	EA4E587A13BD67F700BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Accessing unknown 'strokeWidth' getter method";
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 46;
+		rType = 1;
+	};
+	EA4E587B13BD67F700BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 47";
+		rLen = 0;
+		rLoc = 1094;
+		rType = 0;
+		vrLen = 389;
+		vrLoc = 974;
+	};
+	EA4E588013BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E588113BD680E00BC0665 /* NSObject.h */;
+		name = "NSObject.h: 72";
+		rLen = 12;
+		rLoc = 1291;
+		rType = 0;
+		vrLen = 663;
+		vrLoc = 909;
+	};
+	EA4E588113BD680E00BC0665 /* NSObject.h */ = {
+		isa = PBXFileReference;
+		name = NSObject.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h;
+		sourceTree = "<absolute>";
+	};
+	EA4E588213BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583D13BD545000BC0665 /* PathDrawingInfo.m */;
+		name = "PathDrawingInfo.m: 45";
+		rLen = 0;
+		rLoc = 1013;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 0;
+	};
+	EA4E588313BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771B13BC584B00FCAE71 /* Drawable.h */;
+		name = "Drawable.h: 13";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 184;
+		vrLoc = 0;
+	};
+	EA4E588413BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583C13BD545000BC0665 /* PathDrawingInfo.h */;
+		name = "PathDrawingInfo.h: 25";
+		rLen = 0;
+		rLoc = 641;
+		rType = 0;
+		vrLen = 641;
+		vrLoc = 0;
+	};
+	EA4E588513BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E588613BD680E00BC0665 /* limits.h */;
+		name = "limits.h: 86";
+		rLen = 30;
+		rLoc = 2114;
+		rType = 0;
+		vrLen = 1466;
+		vrLoc = 1482;
+	};
+	EA4E588613BD680E00BC0665 /* limits.h */ = {
+		isa = PBXFileReference;
+		name = limits.h;
+		path = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h";
+		sourceTree = "<absolute>";
+	};
+	EA4E588713BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E588813BD680E00BC0665 /* NSObjCRuntime.h */;
+		name = "NSObjCRuntime.h: 285";
+		rLen = 34;
+		rLoc = 10893;
+		rType = 0;
+		vrLen = 1183;
+		vrLoc = 10146;
+	};
+	EA4E588813BD680E00BC0665 /* NSObjCRuntime.h */ = {
+		isa = PBXFileReference;
+		name = NSObjCRuntime.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h;
+		sourceTree = "<absolute>";
+	};
+	EA4E588913BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* DudelAppDelegate.m */;
+		name = "DudelAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1462;
+		vrLoc = 0;
+	};
+	EA4E588A13BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583B13BD52A100BC0665 /* SynthesizeSingleton.h */;
+		name = "SynthesizeSingleton.h: 10";
+		rLen = 52;
+		rLoc = 133;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 3;
+	};
+	EA4E588B13BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* DudelViewController.h */;
+		name = "DudelViewController.h: 15";
+		rLen = 0;
+		rLoc = 304;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 0;
+	};
+	EA4E588C13BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* DudelViewController.m */;
+		name = "DudelViewController.m: 63";
+		rLen = 0;
+		rLoc = 1585;
+		rType = 0;
+		vrLen = 1298;
+		vrLoc = 311;
+	};
+	EA4E588D13BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771713BC4D0200FCAE71 /* DudelView.h */;
+		name = "DudelView.h: 20";
+		rLen = 43;
+		rLoc = 265;
+		rType = 0;
+		vrLen = 373;
+		vrLoc = 0;
+	};
+	EA4E588E13BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771813BC4D0200FCAE71 /* DudelView.m */;
+		name = "DudelView.m: 32";
+		rLen = 0;
+		rLoc = 603;
+		rType = 0;
+		vrLen = 786;
+		vrLoc = 0;
+	};
+	EA4E588F13BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583713BD4FA800BC0665 /* PencilTool.h */;
+		name = "PencilTool.h: 13";
+		rLen = 42;
+		rLoc = 173;
+		rType = 0;
+		vrLen = 374;
+		vrLoc = 0;
+	};
+	EA4E589013BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 47";
+		rLen = 0;
+		rLoc = 1094;
+		rType = 0;
+		vrLen = 1435;
+		vrLoc = 524;
+	};
+	EA4E589113BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771C13BC5F8F00FCAE71 /* Tool.h */;
+		name = "Tool.h: 35";
+		rLen = 0;
+		rLoc = 790;
+		rType = 0;
+		vrLen = 773;
+		vrLoc = 0;
+	};
+	EA4E589213BD680E00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771C13BC5F8F00FCAE71 /* Tool.h */;
+		name = "Tool.h: 35";
+		rLen = 0;
+		rLoc = 789;
+		rType = 0;
+		vrLen = 797;
+		vrLoc = 0;
+	};
+	EA4E589A13BD685B00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 47";
+		rLen = 0;
+		rLoc = 1094;
+		rType = 0;
+		vrLen = 323;
+		vrLoc = 974;
+	};
+	EA4E589F13BD686D00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771C13BC5F8F00FCAE71 /* Tool.h */;
+		name = "Tool.h: 35";
+		rLen = 0;
+		rLoc = 789;
+		rType = 0;
+		vrLen = 797;
+		vrLoc = 0;
+	};
+	EA4E58A013BD686D00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA84771C13BC5F8F00FCAE71 /* Tool.h */;
+		name = "Tool.h: 35";
+		rLen = 0;
+		rLoc = 789;
+		rType = 0;
+		vrLen = 797;
+		vrLoc = 0;
+	};
+	EA4E58A913BD69C600BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Accessing unknown 'strokeColor' getter method";
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 89;
+		rType = 1;
+	};
+	EA4E58AA13BD69C600BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 90";
+		rLen = 0;
+		rLoc = 2388;
+		rType = 0;
+		vrLen = 239;
+		vrLoc = 2224;
+	};
+	EA4E58AD13BD69DA00BC0665 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Return from incompatible pointer type";
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 14;
+		rType = 1;
+	};
+	EA4E58AE13BD69DA00BC0665 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */;
+		name = "PencilTool.m: 15";
+		rLen = 0;
+		rLoc = 253;
+		rType = 0;
+		vrLen = 379;
+		vrLoc = 119;
 	};
 	EA84770213BC4BDF00FCAE71 /* Dudel */ = {
 		isa = PBXExecutable;
@@ -76,7 +560,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -85,6 +569,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -92,6 +577,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = Dudel;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -112,30 +599,30 @@
 	};
 	EA84771713BC4D0200FCAE71 /* DudelView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {986, 599}}";
-			sepNavSelRange = "{145, 28}";
+			sepNavIntBoundsRect = "{{0, 0}, {986, 594}}";
+			sepNavSelRange = "{265, 43}";
 			sepNavVisRange = "{0, 373}";
 		};
 	};
 	EA84771813BC4D0200FCAE71 /* DudelView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {986, 637}}";
-			sepNavSelRange = "{431, 40}";
-			sepNavVisRange = "{19, 760}";
+			sepNavIntBoundsRect = "{{0, 0}, {986, 650}}";
+			sepNavSelRange = "{603, 0}";
+			sepNavVisRange = "{0, 786}";
 		};
 	};
 	EA84771B13BC584B00FCAE71 /* Drawable.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {986, 599}}";
+			sepNavIntBoundsRect = "{{0, 0}, {986, 569}}";
 			sepNavSelRange = "{177, 0}";
 			sepNavVisRange = "{0, 184}";
 		};
 	};
 	EA84771C13BC5F8F00FCAE71 /* Tool.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {986, 599}}";
-			sepNavSelRange = "{609, 23}";
-			sepNavVisRange = "{0, 773}";
+			sepNavIntBoundsRect = "{{0, 0}, {986, 569}}";
+			sepNavSelRange = "{766, 0}";
+			sepNavVisRange = "{0, 797}";
 		};
 	};
 	EA8477F213BC770C00FCAE71 /* PBXTextBookmark */ = {
@@ -153,7 +640,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* DudelViewController.m */;
 		name = "DudelViewController.m: 152";
 		rLen = 13;
-		rLoc = 2973;
+		rLoc = 3096;
 		rType = 0;
 		vrLen = 1010;
 		vrLoc = 2016;
