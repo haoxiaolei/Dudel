@@ -29,6 +29,7 @@
 	if (self) {
 		drawables = [[NSMutableArray alloc] initWithCapacity:100];
 	}
+	return self;
 }
 
 - (void)drawRect:(CGRect)rect {

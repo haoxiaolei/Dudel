@@ -32,6 +32,7 @@
 - (UIView *)viewForUseWithTool:(id <Tool>)t;
 - (UIColor *)strokeColor;
 - (UIColor *)fillColor;
+- (CGFloat)strokeWidth;
 
 @end
 
