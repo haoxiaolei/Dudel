@@ -15,8 +15,6 @@
 		2899E5220DE3E06400AC0155 /* DudelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* DudelViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* DudelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* DudelViewController.m */; };
-		EA4E583913BD4FA800BC0665 /* PencilTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */; };
-		EA4E583E13BD545000BC0665 /* PathDrawingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E583D13BD545000BC0665 /* PathDrawingInfo.m */; };
 		EA84771913BC4D0200FCAE71 /* DudelView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA84771813BC4D0200FCAE71 /* DudelView.m */; };
 /* End PBXBuildFile section */
 
@@ -34,11 +32,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Dudel_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dudel_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Dudel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dudel-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		EA4E583713BD4FA800BC0665 /* PencilTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PencilTool.h; sourceTree = "<group>"; };
-		EA4E583813BD4FA800BC0665 /* PencilTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PencilTool.m; sourceTree = "<group>"; };
-		EA4E583B13BD52A100BC0665 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
-		EA4E583C13BD545000BC0665 /* PathDrawingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathDrawingInfo.h; sourceTree = "<group>"; };
-		EA4E583D13BD545000BC0665 /* PathDrawingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathDrawingInfo.m; sourceTree = "<group>"; };
 		EA84771713BC4D0200FCAE71 /* DudelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DudelView.h; sourceTree = "<group>"; };
 		EA84771813BC4D0200FCAE71 /* DudelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DudelView.m; sourceTree = "<group>"; };
 		EA84771B13BC584B00FCAE71 /* Drawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
@@ -70,11 +63,6 @@
 				EA84771813BC4D0200FCAE71 /* DudelView.m */,
 				EA84771B13BC584B00FCAE71 /* Drawable.h */,
 				EA84771C13BC5F8F00FCAE71 /* Tool.h */,
-				EA4E583713BD4FA800BC0665 /* PencilTool.h */,
-				EA4E583813BD4FA800BC0665 /* PencilTool.m */,
-				EA4E583B13BD52A100BC0665 /* SynthesizeSingleton.h */,
-				EA4E583C13BD545000BC0665 /* PathDrawingInfo.h */,
-				EA4E583D13BD545000BC0665 /* PathDrawingInfo.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -193,8 +181,6 @@
 				1D3623260D0F684500981E51 /* DudelAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* DudelViewController.m in Sources */,
 				EA84771913BC4D0200FCAE71 /* DudelView.m in Sources */,
-				EA4E583913BD4FA800BC0665 /* PencilTool.m in Sources */,
-				EA4E583E13BD545000BC0665 /* PathDrawingInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

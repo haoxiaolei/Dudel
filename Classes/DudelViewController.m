@@ -9,7 +9,6 @@
 #import "DudelViewController.h"
 
 #import "DudelView.h"
-#import "PencilTool.h"
 
 @implementation DudelViewController
 @synthesize currentTool, fillColor, strokeColor, strokeWidth;
@@ -37,7 +36,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	self.currentTool = [PencilTool sharedPencilTool];
 	self.fillColor = [UIColor lightGrayColor];
 	self.strokeColor = [UIColor blackColor];
 	self.strokeWidth = 2.0;
@@ -94,7 +92,7 @@
 
 - (IBAction)touchPencilItem:(id)sender
 {
-	self.currentTool = [PencilTool sharedPencilTool];
+	
 }
 
 - (void)deselectAllToolButtons
