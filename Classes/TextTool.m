@@ -69,7 +69,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(TextTool);
 			}
 			
 			// Create a Gray Shadow Background to Make the UITextView more clear.
-			CGRect rect = CGRectMake(startPoint.x, startPoint.y, endPoint.x - startPoint.x, endPoint.y - endPoint.y);
+			CGRect rect = CGRectMake(startPoint.x, startPoint.y, endPoint.x - startPoint.x, endPoint.y - startPoint.y);
 			self.completedPath = [UIBezierPath bezierPathWithRect:rect];
 			UIView *backgroundShade = [[[UIView alloc] initWithFrame:touchedView.bounds] autorelease];
 			backgroundShade.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
