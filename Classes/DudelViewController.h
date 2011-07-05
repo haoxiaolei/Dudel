@@ -36,6 +36,7 @@
 - (IBAction)touchRectangleItem:(id)sender;
 - (IBAction)touchLineItem:(id)sender;
 - (IBAction)touchPencilItem:(id)sender;
+- (void)deselectAllToolButtons;
 
 @end
 

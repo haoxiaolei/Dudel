@@ -107,7 +107,7 @@
 
 - (void)deselectAllToolButtons
 {
-	
+	return;
 }
 
 - (void)setCurrentTool:(id <Tool>)t
