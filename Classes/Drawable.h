@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@protocol Drawable
+@protocol Drawable <NSCoding>
 - (void)draw;
 
 @end

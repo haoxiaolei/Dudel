@@ -174,4 +174,22 @@ static UIColor *fontColorFromString(NSString *attrData) {
 		CFRelease(frame);
 	}
 }
+
+- (void)encodeWithCoder:(NSCoder *)encoder {
+	[encoder encodeObject:self.path forKey:@"path"];
+	[encoder encodeObject:self.font forKey:@"font"];
+	[encoder encodeObject:self.text forKey:@"text"];
+	[encoder encodeObject:self.strokeColor forKey:@"strokeColor"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+	if (self = [self init]) {
+		self.path = [decoder decodeObjectForKey:@"path"];
+		self.font = [decoder decodeObjectForKey:@"font"];
+		self.text = [decoder decodeObjectForKey:@"text"];
+		self.strokeColor = [decoder decodeObjectForKey:@"strokeColor"];
+	}
+	return self;
+}
+
 @end

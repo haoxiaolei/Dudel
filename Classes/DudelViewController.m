@@ -11,9 +11,11 @@
 #import "DudelView.h"
 #import "PencilTool.h"
 #import "TextTool.h"
+#import "FontListController.h"
+#import "FontSizeController.h"
 
 @implementation DudelViewController
-@synthesize currentTool, fillColor, strokeColor, strokeWidth, font;
+@synthesize currentTool, fillColor, strokeColor, strokeWidth, font, currentPopover;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -43,9 +45,21 @@
 	self.strokeColor = [UIColor blackColor];
 	self.strokeWidth = 2.0;
 	self.font = [UIFont systemFontOfSize:24.0];
+	
+	// reload default document
+	NSArray *dirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *filename = [[dirs objectAtIndex:0] stringByAppendingPathComponent:@"Untitled.dudeldoc"];
+	[self loadFromFile:filename];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillTerminate:) name:UIApplicationWillTerminateNotification object:[UIApplication sharedApplication]];
+	
 }
 
-
+- (void)applicationWillTerminate:(NSNotification *)n {
+	NSArray *dirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *filename = [[dirs objectAtIndex:0] stringByAppendingPathComponent:@"Untitled.dudeldoc"];
+	[self saveCurrentToFile:filename];
+}
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -69,6 +83,10 @@
 
 
 - (void)dealloc {
+	self.currentTool = nil;
+	self.fillColor = nil;
+	self.strokeColor = nil;
+	self.currentPopover = nil;
     [super dealloc];
 }
 
@@ -110,6 +128,47 @@
 	return;
 }
 
+// 只在 列表选项选定后再触发 通过通知.
+- (void)fontListControllerDidSelect:(NSNotification *)notification {
+	FontListController *flc = [notification object];
+	UIPopoverController *popoverController = flc.container;
+	[popoverController dismissPopoverAnimated:YES];
+	[self handleDismissedPopoverController:popoverController];
+	self.currentPopover = nil;
+}
+
+- (void)setupNewPopoverControllerForViewController:(UIViewController *)vc {
+	if (self.currentPopover) {
+		[self.currentPopover dismissPopoverAnimated:YES];
+		[self handleDismissedPopoverController:self.currentPopover];
+	}
+	self.currentPopover = [[[UIPopoverController alloc] initWithContentViewController:vc] autorelease];
+	self.currentPopover.delegate = self;
+}
+
+- (IBAction)popoverFontName:(id)sender {
+	FontListController *flc = [[[FontListController alloc] initWithStyle:UITableViewStylePlain] autorelease];
+	flc.selectedFontName = self.font.fontName;
+	[self setupNewPopoverControllerForViewController:flc];
+	flc.container = self.currentPopover;
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fontListControllerDidSelect:) name:FontListControllerDidSelect object:flc];
+	[self.currentPopover presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+- (IBAction)popoverFontSize:(id)sender {
+	FontSizeController *fsc = [[[FontSizeController alloc] initWithNibName:nil bundle:nil] autorelease];
+	fsc.font = self.font;
+	[self setupNewPopoverControllerForViewController:fsc];
+	self.currentPopover.popoverContentSize = fsc.view.frame.size;
+	[self.currentPopover presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+- (IBAction)popoverStrokeWidth:(id)sender {
+}
+- (IBAction)popoverStrokeColor:(id)sender {
+}
+- (IBAction)popoverFillColor:(id)sender {
+}
+
+
 - (void)setCurrentTool:(id <Tool>)t
 {
 	[currentTool deactivate];
@@ -123,6 +182,9 @@
 	[currentTool activate];
 	[dudelView setNeedsDisplay];
 }
+
+#pragma mark -
+#pragma mark ToolDelegate Methods
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -162,6 +224,37 @@
 - (void)drawTemporary
 {
 	[self.currentTool drawTemporary];
+}
+
+#pragma mark -
+#pragma mark UIPopoverControllerDelegate Methods
+
+- (void)handleDismissedPopoverController:(UIPopoverController *)popoverController {
+	if ([popoverController.contentViewController isMemberOfClass:[FontListController class]]) {
+		FontListController *flc = (FontListController *)popoverController.contentViewController;
+		self.font = [UIFont fontWithName:flc.selectedFontName size:self.font.pointSize];
+	} else if ([popoverController.contentViewController isMemberOfClass:[FontSizeController class]]) {
+		FontSizeController *fsc = (FontSizeController *)popoverController.contentViewController;
+		self.font =fsc.font;
+	}
+	self.currentPopover = nil;
+}
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
+	[self handleDismissedPopoverController:popoverController];
+}
+
+- (BOOL)saveCurrentToFile:(NSString *)filename {
+	return [NSKeyedArchiver archiveRootObject:dudelView.drawables toFile:filename];
+}
+
+- (BOOL)loadFromFile:(NSString *)filename {
+	id root = [NSKeyedUnarchiver unarchiveObjectWithFile:filename];
+	if (root) {
+		dudelView.drawables = root;
+	}
+	[dudelView setNeedsLayout];
+	return (root != nil);
 }
 
 @end

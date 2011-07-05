@@ -45,4 +45,19 @@
 	CGContextRestoreGState(context);
 }
 
+- (void)encodeWithCoder:(NSCoder *)encoder {
+	[encoder encodeObject:self.path forKey:@"path"];
+	[encoder encodeObject:self.fillColor forKey:@"fillColor"];
+	[encoder encodeObject:self.strokeColor forKey:@"strokeColor"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+	if (self = [self init]) {
+		self.path = [decoder decodeObjectForKey:@"path"];
+		self.fillColor = [decoder decodeObjectForKey:@"fillColor"];
+		self.strokeColor = [decoder decodeObjectForKey:@"strokeColor"];
+	}
+	return self;
+}
+
 @end

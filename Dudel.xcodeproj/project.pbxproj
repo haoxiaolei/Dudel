@@ -21,6 +21,11 @@
 		EA8D1E9413BD959C005A12B2 /* TextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8D1E9313BD959C005A12B2 /* TextTool.m */; };
 		EA8D1E9713BDAFDE005A12B2 /* TextDrawingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8D1E9613BDAFDE005A12B2 /* TextDrawingInfo.m */; };
 		EA8D1E9F13BDC481005A12B2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D1E9E13BDC481005A12B2 /* CoreText.framework */; };
+		EA99E87413C29BAB002E775F /* FontListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA99E87313C29BAB002E775F /* FontListController.m */; };
+		EA99E89413C2B657002E775F /* FontSizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA99E89213C2B657002E775F /* FontSizeController.m */; };
+		EA99E89513C2B657002E775F /* FontSizeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA99E89313C2B657002E775F /* FontSizeController.xib */; };
+		EA99E91413C2E2B2002E775F /* FileList.m in Sources */ = {isa = PBXBuildFile; fileRef = EA99E91313C2E2B2002E775F /* FileList.m */; };
+		EAB057DB13C3050100C87E4C /* FileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB057DA13C3050100C87E4C /* FileListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,15 @@
 		EA8D1E9513BDAFDE005A12B2 /* TextDrawingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextDrawingInfo.h; sourceTree = "<group>"; };
 		EA8D1E9613BDAFDE005A12B2 /* TextDrawingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextDrawingInfo.m; sourceTree = "<group>"; };
 		EA8D1E9E13BDC481005A12B2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		EA99E87213C29BAB002E775F /* FontListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontListController.h; sourceTree = "<group>"; };
+		EA99E87313C29BAB002E775F /* FontListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontListController.m; sourceTree = "<group>"; };
+		EA99E89113C2B657002E775F /* FontSizeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontSizeController.h; sourceTree = "<group>"; };
+		EA99E89213C2B657002E775F /* FontSizeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontSizeController.m; sourceTree = "<group>"; };
+		EA99E89313C2B657002E775F /* FontSizeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FontSizeController.xib; path = Classes/FontSizeController.xib; sourceTree = "<group>"; };
+		EA99E91213C2E2B2002E775F /* FileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileList.h; sourceTree = "<group>"; };
+		EA99E91313C2E2B2002E775F /* FileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileList.m; sourceTree = "<group>"; };
+		EAB057D913C3050100C87E4C /* FileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileListViewController.h; sourceTree = "<group>"; };
+		EAB057DA13C3050100C87E4C /* FileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +102,14 @@
 				EA8D1E9313BD959C005A12B2 /* TextTool.m */,
 				EA8D1E9513BDAFDE005A12B2 /* TextDrawingInfo.h */,
 				EA8D1E9613BDAFDE005A12B2 /* TextDrawingInfo.m */,
+				EA99E87213C29BAB002E775F /* FontListController.h */,
+				EA99E87313C29BAB002E775F /* FontListController.m */,
+				EA99E89113C2B657002E775F /* FontSizeController.h */,
+				EA99E89213C2B657002E775F /* FontSizeController.m */,
+				EA99E91213C2E2B2002E775F /* FileList.h */,
+				EA99E91313C2E2B2002E775F /* FileList.m */,
+				EAB057D913C3050100C87E4C /* FileListViewController.h */,
+				EAB057DA13C3050100C87E4C /* FileListViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -125,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				2899E5210DE3E06400AC0155 /* DudelViewController.xib */,
+				EA99E89313C2B657002E775F /* FontSizeController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Dudel-Info.plist */,
 			);
@@ -193,6 +216,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* DudelViewController.xib in Resources */,
+				EA99E89513C2B657002E775F /* FontSizeController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +235,10 @@
 				EA4E583E13BD545000BC0665 /* PathDrawingInfo.m in Sources */,
 				EA8D1E9413BD959C005A12B2 /* TextTool.m in Sources */,
 				EA8D1E9713BDAFDE005A12B2 /* TextDrawingInfo.m in Sources */,
+				EA99E87413C29BAB002E775F /* FontListController.m in Sources */,
+				EA99E89413C2B657002E775F /* FontSizeController.m in Sources */,
+				EA99E91413C2E2B2002E775F /* FileList.m in Sources */,
+				EAB057DB13C3050100C87E4C /* FileListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

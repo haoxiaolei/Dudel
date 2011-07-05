@@ -1,11 +1,12 @@
 TDudel
 v7
 r0
-t331461567.965016
+t331549707.713519
 cCheck dependencies
 cProcessInfoPlistFile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Info.plist Dudel-Info.plist
 cCompileXIB /Users/Haoxiaolei/Documents/Project/Dudel/MainWindow.xib
 cCompileXIB /Users/Haoxiaolei/Documents/Project/Dudel/DudelViewController.xib
+cCompileXIB /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.xib
 cProcessPCH /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch.gch Dudel_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/main.o /Users/Haoxiaolei/Documents/Project/Dudel/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelAppDelegate.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -15,6 +16,10 @@ cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i38
 cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PathDrawingInfo.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextTool.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextDrawingInfo.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontListController.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontListController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontSizeController.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileList.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileListViewController.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel normal i386
 cGenerateDSYMFile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app.dSYM /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel
 cTouch /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app
@@ -60,9 +65,9 @@ t1287727235
 s7657392
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/Drawable.h
-c000000004E0D176500000000000000B8
-t1309480805
-s184
+c000000004E12A66100000000000000C3
+t1309845089
+s195
 i<UIKit/UIKit.h>
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.h
@@ -92,21 +97,78 @@ i"DudelView.h"
 i"Drawable.h"
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.h
-c000000004E1113B600000000000004AF
-t1309742006
-s1199
+c000000004E12A62000000000000006B4
+t1309845024
+s1716
 i<UIKit/UIKit.h>
 i"DudelView.h"
 i"Tool.h"
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m
-c000000004E1113A40000000000000D1A
-t1309741988
-s3354
+c000000004E12A6160000000000001CA8
+t1309845014
+s7336
 i"DudelViewController.h"
 i"DudelView.h"
 i"PencilTool.h"
 i"TextTool.h"
+i"FontListController.h"
+i"FontSizeController.h"
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.h
+c000000004E12ABE20000000000000267
+t1309846498
+s615
+i<Foundation/Foundation.h>
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m
+c000000004E12CCE70000000000000E29
+t1309854951
+s3625
+i"FileList.h"
+i"SynthesizeSingleton.h"
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileListViewController.h
+c000000004E12CDFF0000000000000216
+t1309855231
+s534
+i<UIKit/UIKit.h>
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileListViewController.m
+c000000004E12D48B00000000000015C3
+t1309856907
+s5571
+i"FileListViewController.h"
+i"FileList.h"
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontListController.h
+c000000004E12649E000000000000020F
+t1309828254
+s527
+i<UIKit/UIKit.h>
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontListController.m
+c000000004E1268A800000000000019B0
+t1309829288
+s6576
+i"FontListController.h"
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.h
+c000000004E127F19000000000000018B
+t1309835033
+s395
+i<UIKit/UIKit.h>
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.m
+c000000004E1282150000000000000694
+t1309835797
+s1684
+i"FontSizeController.h"
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.xib
+c000000004E12804C0000000000005FDD
+t1309835340
+s24541
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.h
 c000000004E0D3ACD0000000000000281
@@ -116,9 +178,9 @@ i<Foundation/Foundation.h>
 i"Drawable.h"
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m
-c000000004E0D3ACD00000000000003FE
-t1309489869
-s1022
+c000000004E12A24C00000000000005E8
+t1309844044
+s1512
 i"PathDrawingInfo.h"
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.h
@@ -129,8 +191,8 @@ i<Foundation/Foundation.h>
 i"Tool.h"
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m
-c000000004E0D3ACD0000000000000A18
-t1309489869
+c000000004E12A2390000000000000A18
+t1309844025
 s2584
 i"PencilTool.h"
 i"PathDrawingInfo.h"
@@ -149,9 +211,9 @@ i<Foundation/Foundation.h>
 i"Drawable.h"
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m
-c000000004E11685D0000000000001930
-t1309763677
-s6448
+c000000004E12AAD30000000000001B6D
+t1309846227
+s7021
 i"TextDrawingInfo.h"
 i<CoreText/CoreText.h>
 
@@ -177,9 +239,9 @@ s814
 i<UIKit/UIKit.h>
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/DudelViewController.xib
-c000000004E0D5C4D0000000000007C87
-t1309498445
-s31879
+c000000004E1260340000000000009AF3
+t1309827124
+s39667
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/Dudel_Prefix.pch
 c000000004E0D176500000000000000B3
@@ -194,68 +256,88 @@ t1309480805
 s19701
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app
-t1309763679
-s238
+t1309856907
+s272
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app.dSYM
-t1309763679
+t1309856907
 s102
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel
-t1309763679
-s66052
+t1309856907
+s101164
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/DudelViewController.nib
-t1309757557
-s1936
+t1309845314
+s2506
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/FontSizeController.nib
+t1309845315
+s2382
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Info.plist
-t1309757556
-s790
+t1309845609
+s827
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/MainWindow.nib
-t1309757557
+t1309845314
 s1119
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/PkgInfo
-t1309757556
+t1309845609
 s8
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/Dudel.LinkFileList
-c000000004E1150740000000000000408
-t1309757556
-s1032
+c000000004E12D48B000000000000061E
+t1309856907
+s1566
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelAppDelegate.o
-t1309762972
-s50424
+t1309845316
+s50448
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelView.o
-t1309757558
+t1309845316
 s41352
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelViewController.o
-t1309757558
-s57876
+t1309845316
+s80648
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileList.o
+t1309854952
+s23516
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileListViewController.o
+t1309856907
+s49348
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontListController.o
+t1309845317
+s52084
+
+N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontSizeController.o
+t1309845317
+s44392
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PathDrawingInfo.o
-t1309757558
-s14868
+t1309845317
+s17340
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PencilTool.o
-t1309757558
+t1309845317
 s58600
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextDrawingInfo.o
-t1309763679
-s30176
+t1309854915
+s32784
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextTool.o
-t1309757558
+t1309845317
 s69296
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/main.o
-t1309757558
+t1309845316
 s6308
 
 N/Users/Haoxiaolei/Documents/Project/Dudel/main.m
@@ -265,21 +347,21 @@ s344
 i<UIKit/UIKit.h>
 
 N/var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch.gch
-t1309757558
+t1309845316
 s15453392
 
 NDudel-Info.plist
-c000000004E0D176500000000000004D6
-t1309480805
-s1238
+c000000004E12A86700000000000004DB
+t1309845607
+s1243
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies331461567#331461567#0(0"0(0#1#0"3343187568374212096#0"0#
+lSLF07#2@18"Check dependencies331549707#331549707#0(0"0(0#1#0"8598967552#0"0#
 
 CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelAppDelegate.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331455772.772197
-e331455772.983288
+s331538116.722408
+e331538116.825116
 r1
 xCompileC
 xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelAppDelegate.o
@@ -288,11 +370,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.m331455772#331455772#0(0"0(0#0#68"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.m8029405159545332736#1939"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelAppDelegate.o0#
+lSLF07#2@76"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.m331538116#331538116#0(0"0(0#0#68"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.m8621862240#1939"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelAppDelegate.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelAppDelegate.o0#
 
 CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelView.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331450358.268714
-e331450358.389439
+s331538116.825217
+e331538116.922463
 r1
 xCompileC
 xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelView.o
@@ -301,11 +383,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelView.m331450358#331450358#0(0"0(0#0#61"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelView.m8633490624#1925"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelView.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelView.o0#
+lSLF07#2@69"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelView.m331538116#331538116#0(0"0(0#0#61"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelView.m8621444768#1925"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelView.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelView.o0#
 
 CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelViewController.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331450358.243257
-e331450358.359603
+s331538116.785199
+e331538116.944783
 r1
 xCompileC
 xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelViewController.o
@@ -314,11 +396,67 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m331450358#331450358#0(0"0(0#0#71"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m8633730304#1945"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelViewController.o0#
+lSLF07#2@79"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m331538116#331538116#0(0"0(0#0#71"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m8621560736#1945"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/DudelViewController.o0#
+
+CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileList.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s331547752.211857
+e331547752.356659
+r1
+xCompileC
+xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileList.o
+x/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m: In function '-[FileList copyWithZone:]':
+o/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m:18: warning: return from incompatible pointer type
+o/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m: In function '-[FileList deleteCurrentFile]':
+o/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m:58: warning: unused variable 'result'
+lSLF07#2@68"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m331547752#331547752#0(421"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m: In function '-[FileList copyWithZone:]':/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m:18: warning: return from incompatible pointer type/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m: In function '-[FileList deleteCurrentFile]':/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m:58: warning: unused variable 'result'2(22@37"Return from incompatible pointer type331547752#103#112#0(6@60"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m331547751#18#0#18#0#0"0(22@24"Unused variable 'result'331547752#322#99#0(6@60"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m331547751#58#0#58#0#19"unused variable '*'0(0#0#60"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m8614873440#1923"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileList.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileList.o0#
+
+CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileListViewController.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s331549707.496290
+e331549707.640760
+r1
+xCompileC
+xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileListViewController.o
+x/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileListViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileListViewController.m331549707#331549707#0(0"0(0#0#74"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileListViewController.m8626208416#1951"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FileListViewController.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FileListViewController.o0#
+
+CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontListController.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontListController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s331538117.203408
+e331538117.319805
+r1
+xCompileC
+xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontListController.o
+x/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontListController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontListController.m331538117#331538117#0(0"0(0#0#70"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontListController.m8622187904#1943"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontListController.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontListController.o0#
+
+CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontSizeController.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s331538117.207572
+e331538117.305561
+r1
+xCompileC
+xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontSizeController.o
+x/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.m331538117#331538117#0(0"0(0#0#70"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.m8621888768#1943"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/FontSizeController.o0#
 
 CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PathDrawingInfo.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331450358.389544
-e331450358.457026
+s331538116.944916
+e331538117.016370
 r1
 xCompileC
 xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PathDrawingInfo.o
@@ -327,11 +465,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m331450358#331450358#0(0"0(0#0#67"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m8634150912#1937"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PathDrawingInfo.o0#
+lSLF07#2@75"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m331538116#331538117#0(0"0(0#0#67"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m8620098112#1937"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PathDrawingInfo.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PathDrawingInfo.o0#
 
 CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PencilTool.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331450358.359722
-e331450358.498825
+s331538116.922565
+e331538117.048373
 r1
 xCompileC
 xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PencilTool.o
@@ -342,11 +480,11 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m: In function '-[PencilTool copyWithZone:]':
 o/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m:15: warning: return from incompatible pointer type
-lSLF07#2@70"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m331450358#331450358#0(221"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m: In function '-[PencilTool copyWithZone:]':/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m:15: warning: return from incompatible pointer type1(22@37"Return from incompatible pointer type331450358#107#114#0(6@62"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m331182669#15#0#15#0#0"0(0#0#62"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m8634388608#1927"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PencilTool.o0#
+lSLF07#2@70"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m331538116#331538117#0(221"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m: In function '-[PencilTool copyWithZone:]':/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m:15: warning: return from incompatible pointer type1(22@37"Return from incompatible pointer type331538116#107#114#0(6@62"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m331536825#15#0#15#0#0"0(0#0#62"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m8620137632#1927"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/PencilTool.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/PencilTool.o0#
 
 CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextDrawingInfo.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331456478.968247
-e331456479.136872
+s331547714.844389
+e331547715.103461
 r1
 xCompileC
 xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextDrawingInfo.o
@@ -355,11 +493,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m331456478#331456479#0(0"0(0#0#67"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m8618035968#1937"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextDrawingInfo.o0#
+lSLF07#2@75"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m331547714#331547715#0(0"0(0#0#67"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m8029405159545332736#1937"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextDrawingInfo.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextDrawingInfo.o0#
 
 CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextTool.o /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331450358.457130
-e331450358.600540
+s331538117.016475
+e331538117.203299
 r1
 xCompileC
 xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextTool.o
@@ -370,11 +508,11 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m: In function '-[TextTool copyWithZone:]':
 o/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m:22: warning: return from incompatible pointer type
-lSLF07#2@68"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m331450358#331450358#0(215"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m: In function '-[TextTool copyWithZone:]':/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m:22: warning: return from incompatible pointer type1(22@37"Return from incompatible pointer type331450358#103#112#0(6@60"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m331432830#22#0#22#0#0"0(0#0#60"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m8633779040#1923"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextTool.o0#
+lSLF07#2@68"Compile /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m331538117#331538117#0(215"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m: In function '-[TextTool copyWithZone:]':/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m:22: warning: return from incompatible pointer type1(22@37"Return from incompatible pointer type331538117#103#112#0(6@60"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m331432830#22#0#22#0#0"0(0#0#60"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m8620009408#1923"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/Classes/TextTool.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/TextTool.o0#
 
 CCompileC build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/main.o /Users/Haoxiaolei/Documents/Project/Dudel/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331450358.181399
-e331450358.243145
+s331538116.709233
+e331538116.785090
 r1
 xCompileC
 xbuild/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/main.o
@@ -383,55 +521,63 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/Haoxiaolei/Documents/Project/Dudel/main.m331450358#331450358#0(0"0(0#0#48"/Users/Haoxiaolei/Documents/Project/Dudel/main.m8633964928#1907"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/main.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/main.o0#
+lSLF07#2@56"Compile /Users/Haoxiaolei/Documents/Project/Dudel/main.m331538116#331538116#0(0"0(0#0#48"/Users/Haoxiaolei/Documents/Project/Dudel/main.m8622114656#1907"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -include /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch -c /Users/Haoxiaolei/Documents/Project/Dudel/main.m -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.xib
+s331538114.919211
+e331538115.476739
+r1
+xCompileXIB
+x/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.xib
+lSLF07#2@41"CompileXIB Classes/FontSizeController.xib331538114#331538115#0(0"0(0#0#72"/Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.xib8619528416#601"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/FontSizeController.nib /Users/Haoxiaolei/Documents/Project/Dudel/Classes/FontSizeController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/Haoxiaolei/Documents/Project/Dudel/DudelViewController.xib
-s331450356.215773
-e331450357.061927
+s331538113.258391
+e331538114.919012
 r1
 xCompileXIB
 x/Users/Haoxiaolei/Documents/Project/Dudel/DudelViewController.xib
-lSLF07#2@34"CompileXIB DudelViewController.xib331450356#331450357#0(0"0(0#0#65"/Users/Haoxiaolei/Documents/Project/Dudel/DudelViewController.xib8618638336#595"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/DudelViewController.nib /Users/Haoxiaolei/Documents/Project/Dudel/DudelViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@34"CompileXIB DudelViewController.xib331538113#331538114#0(0"0(0#0#65"/Users/Haoxiaolei/Documents/Project/Dudel/DudelViewController.xib8603364800#595"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/DudelViewController.nib /Users/Haoxiaolei/Documents/Project/Dudel/DudelViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/Haoxiaolei/Documents/Project/Dudel/MainWindow.xib
-s331450356.214992
-e331450357.152780
+s331538113.257498
+e331538114.994295
 r1
 xCompileXIB
 x/Users/Haoxiaolei/Documents/Project/Dudel/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib331450356#331450357#0(0"0(0#0#56"/Users/Haoxiaolei/Documents/Project/Dudel/MainWindow.xib8632741728#577"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/MainWindow.nib /Users/Haoxiaolei/Documents/Project/Dudel/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@25"CompileXIB MainWindow.xib331538113#331538114#0(0"0(0#0#56"/Users/Haoxiaolei/Documents/Project/Dudel/MainWindow.xib8611054912#577"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/MainWindow.nib /Users/Haoxiaolei/Documents/Project/Dudel/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CGenerateDSYMFile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app.dSYM /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel
-s331456479.168014
-e331456479.192551
+s331549707.677755
+e331549707.710582
 r1
 xGenerateDSYMFile
 x/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app.dSYM
 x/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel
-lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/Dudel.app.dSYM build/Debug-iphonesimulator/Dudel.app/Dudel331456479#331456479#0(0"0(0#0#85"/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel8618061632#386"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app.dSYM0#
+lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/Dudel.app.dSYM build/Debug-iphonesimulator/Dudel.app/Dudel331549707#331549707#0(0"0(0#0#85"/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel8626685024#386"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app.dSYM0#
 
 CLd /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel normal i386
-s331456479.136964
-e331456479.167903
+s331549707.640870
+e331549707.677638
 r1
 xLd
 x/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel
 xnormal
 xi386
-lSLF07#2@90"Link /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel331456479#331456479#0(0"0(0#0#0"8618149376#925"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -filelist /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/Dudel.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreText -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel0#
+lSLF07#2@90"Link /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel331549707#331549707#0(0"0(0#0#0"8627336928#925"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -filelist /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Objects-normal/i386/Dudel.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreText -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Dudel0#
 
 CProcessInfoPlistFile /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Info.plist Dudel-Info.plist
-s331450356.208089
-e331450356.214893
+s331538409.211028
+e331538409.229110
 r1
 xProcessInfoPlistFile
 x/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Info.plist
 xDudel-Info.plist
-lSLF07#2@24"Process Dudel-Info.plist331450356#331450356#0(0"0(0#0#58"/Users/Haoxiaolei/Documents/Project/Dudel/Dudel-Info.plist8629664512#482"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Dudel-Info.plist -genpkginfo /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Info.plist0#
+lSLF07#2@24"Process Dudel-Info.plist331538409#331538409#0(0"0(0#0#58"/Users/Haoxiaolei/Documents/Project/Dudel/Dudel-Info.plist8618780640#482"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Dudel-Info.plist -genpkginfo /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app/Info.plist0#
 
 CProcessPCH /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch.gch Dudel_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s331450357.152913
-e331450358.181137
+s331538115.476873
+e331538116.708979
 r1
 xProcessPCH
 x/var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch.gch
@@ -440,13 +586,13 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@27"Precompile Dudel_Prefix.pch331450357#331450358#0(0"0(0#0#58"/Users/Haoxiaolei/Documents/Project/Dudel/Dudel_Prefix.pch8642047360#1798"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -c /Users/Haoxiaolei/Documents/Project/Dudel/Dudel_Prefix.pch -o /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch.gch0#
+lSLF07#2@27"Precompile Dudel_Prefix.pch331538115#331538116#0(0"0(0#0#58"/Users/Haoxiaolei/Documents/Project/Dudel/Dudel_Prefix.pch8603721472#1798"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-generated-files.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-own-target-headers.hmap -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-all-target-headers.hmap -iquote /Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/Dudel-project-headers.hmap -F/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/include -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources/i386 -I/Users/Haoxiaolei/Documents/Project/Dudel/build/Dudel.build/Debug-iphonesimulator/Dudel.build/DerivedSources -c /Users/Haoxiaolei/Documents/Project/Dudel/Dudel_Prefix.pch -o /var/folders/IX/IXHa0Po8H2Wu+3o2HVlOTU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Dudel_Prefix-eojyfgegyqrruhcrheaelssnkkmt/Dudel_Prefix.pch.gch0#
 
 CTouch /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app
-s331456479.192640
-e331456479.195279
+s331549707.710671
+e331549707.713476
 r1
 xTouch
 x/Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app
-lSLF07#2@85"Touch /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app331456479#331456479#0(0"0(0#0#0"8617997024#282"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app0#
+lSLF07#2@85"Touch /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app331549707#331549707#0(0"0(0#0#0"8626535136#282"    cd /Users/Haoxiaolei/Documents/Project/Dudel    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Haoxiaolei/Documents/Project/Dudel/build/Debug-iphonesimulator/Dudel.app0#
 
