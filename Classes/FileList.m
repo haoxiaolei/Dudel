@@ -72,6 +72,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(FileList)
 		[[NSNotificationCenter defaultCenter] postNotificationName:FileListChanged object:self];
 	}
 }
+
 - (void)renameFile:(NSString *)oldFilename to:(NSString *)newFilename {
 	[[NSFileManager defaultManager] moveItemAtPath:oldFilename toPath:newFilename error:NULL];
 	if ([self.currentFile isEqual:oldFilename]) {
@@ -83,9 +84,11 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(FileList)
 	}
 	[[NSNotificationCenter defaultCenter] postNotificationName:FileListChanged object:self];
 }
+
 - (void)renameCurrentFile:(NSString *)newFileName {
 	[self renameFile:self.currentFile to:newFileName];
 }
+
 - (NSString *)createAndSelectNewUntitled {
 	NSString *defaultFilename = [NSString stringWithFormat:@"Dudel %@.dudeldoc", [NSDate date]];
 	NSArray *dirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

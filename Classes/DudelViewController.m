@@ -13,6 +13,9 @@
 #import "TextTool.h"
 #import "FontListController.h"
 #import "FontSizeController.h"
+#import "FileList.h"
+#import "ActionsMenuController.h"
+
 
 @implementation DudelViewController
 @synthesize currentTool, fillColor, strokeColor, strokeWidth, font, currentPopover;
@@ -47,8 +50,9 @@
 	self.font = [UIFont systemFontOfSize:24.0];
 	
 	// reload default document
-	NSArray *dirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *filename = [[dirs objectAtIndex:0] stringByAppendingPathComponent:@"Untitled.dudeldoc"];
+//	NSArray *dirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//	NSString *filename = [[dirs objectAtIndex:0] stringByAppendingPathComponent:@"Untitled.dudeldoc"];
+	NSString *filename = [FileList sharedFileList].currentFile;
 	[self loadFromFile:filename];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillTerminate:) name:UIApplicationWillTerminateNotification object:[UIApplication sharedApplication]];
@@ -168,6 +172,64 @@
 - (IBAction)popoverFillColor:(id)sender {
 }
 
+- (void)popoverActionsMenu:(id)sender {
+	ActionsMenuController *amc = [[[ActionsMenuController alloc] initWithNibName:nil bundle:nil] autorelease];
+	[self setupNewPopoverControllerForViewController:amc];
+	amc.container = self.currentPopover;
+	self.currentPopover.popoverContentSize = CGSizeMake(320, 44 * 5);
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(actionsMenuControllerDidSelect:) name:ActionsMenuControllerDidSelect object:amc];
+	[self.currentPopover presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+- (void)actionsMenuControllerDidSelect:(NSNotification *)notification {
+	ActionsMenuController *amc = [notification object];
+	UIPopoverController *popoverController = amc.container;
+	[popoverController dismissPopoverAnimated:YES];
+	[self handleDismissedPopoverController:popoverController];
+	self.currentPopover = nil;
+}
+
+- (void)createDocument {
+	[self saveCurrentToFile:[FileList sharedFileList].currentFile];
+	[[FileList sharedFileList] createAndSelectNewUntitled];
+	dudelView.drawables = [NSMutableArray array];
+	[dudelView setNeedsDisplay];
+}
+
+- (void)deleteCurrentDocumentWithConfirmation {
+	[[[[UIAlertView alloc] initWithTitle:@"Delete current Dudel" message:@"This will remove your current drawing completely. Are you sure you want to do that?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Delete it!", nil] autorelease] show];
+}
+
+- (void)renameCurrentDocument {
+	FileRenameViewController *controller = [[[FileRenameViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+	controller.delegate = self;
+	controller.modalPresentationStyle = UIModalPresentationFormSheet;
+	controller.originalFilename = [FileList sharedFileList].currentFile;
+	[self presentModalViewController:controller animated:YES];
+}
+
+- (void)showAppInfo {
+
+}
+
+- (void)sendPdfEmail {
+	
+}
+
+#pragma mark FileRenameViewController Delegate Methods
+- (void)fileRenameViewController:(FileRenameViewController *)c didRename:(NSString *)oldFilename to:(NSString *)newFilename {
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark UIAlertViewDelegate Methods
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == 1) {
+		[[FileList sharedFileList] deleteCurrentFile];
+		[self loadFromFile:[FileList sharedFileList].currentFile];
+	}
+}
 
 - (void)setCurrentTool:(id <Tool>)t
 {
@@ -236,6 +298,28 @@
 	} else if ([popoverController.contentViewController isMemberOfClass:[FontSizeController class]]) {
 		FontSizeController *fsc = (FontSizeController *)popoverController.contentViewController;
 		self.font =fsc.font;
+	} else if ([popoverController.contentViewController isMemberOfClass:[ActionsMenuController class]]) {
+		ActionsMenuController *amc = (ActionsMenuController *)popoverController.contentViewController;
+		switch (amc.selection) {
+			case NewDocument:
+				[self createDocument];
+				break;
+			case RenameDocument:
+				[self renameCurrentDocument];
+				break;
+			case DeleteDocument:
+				[self deleteCurrentDocumentWithConfirmation];
+				break;
+			case EmailPdf:
+				[self sendPdfEmail];
+				break;
+			case ShowAppInfo:
+				[self showAppInfo];
+				break;
+
+			default:
+				break;
+		}
 	}
 	self.currentPopover = nil;
 }
@@ -255,6 +339,38 @@
 	}
 	[dudelView setNeedsLayout];
 	return (root != nil);
+}
+
+#pragma mark -
+#pragma mark UISplitViewControllerDelegate Methods
+
+- (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
+{
+	NSMutableArray *newItems = [[toolbar.items mutableCopy] autorelease];
+	[newItems insertObject:barButtonItem atIndex:0];
+	UIBarButtonItem *spacer = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil] autorelease];
+	[newItems insertObject:spacer atIndex:1];
+	[toolbar setItems:newItems animated:YES];
+	barButtonItem.title = @"My Dudels";
+}
+
+- (void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+	NSMutableArray *newItems = [[toolbar.items mutableCopy] autorelease];
+	if ([newItems containsObject:barButtonItem]) {
+		[newItems removeObject:barButtonItem];
+		[newItems removeObjectAtIndex:0];
+		[toolbar setItems:newItems animated:YES];
+	}
+}
+
+- (void)splitViewController:(UISplitViewController *)svc popoverController:(UIPopoverController *)pc willPresentViewController:(UIViewController *)aViewController
+{
+	if (self.currentPopover) {
+		[self.currentPopover dismissPopoverAnimated:YES];
+		[self handleDismissedPopoverController:self.currentPopover];
+	}
+	self.currentPopover = pc;
 }
 
 @end

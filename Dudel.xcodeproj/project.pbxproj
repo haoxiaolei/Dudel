@@ -15,6 +15,9 @@
 		2899E5220DE3E06400AC0155 /* DudelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* DudelViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* DudelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* DudelViewController.m */; };
+		EA2947F813C5795B00B1D8D0 /* ActionsMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2947F713C5795B00B1D8D0 /* ActionsMenuController.m */; };
+		EA29483B13C58EAF00B1D8D0 /* FileRenameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA29483913C58EAF00B1D8D0 /* FileRenameViewController.m */; };
+		EA29483C13C58EAF00B1D8D0 /* FileRenameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA29483A13C58EAF00B1D8D0 /* FileRenameViewController.xib */; };
 		EA4E583913BD4FA800BC0665 /* PencilTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E583813BD4FA800BC0665 /* PencilTool.m */; };
 		EA4E583E13BD545000BC0665 /* PathDrawingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E583D13BD545000BC0665 /* PathDrawingInfo.m */; };
 		EA84771913BC4D0200FCAE71 /* DudelView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA84771813BC4D0200FCAE71 /* DudelView.m */; };
@@ -42,6 +45,11 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Dudel_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dudel_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Dudel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dudel-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EA2947F613C5795B00B1D8D0 /* ActionsMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsMenuController.h; sourceTree = "<group>"; };
+		EA2947F713C5795B00B1D8D0 /* ActionsMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsMenuController.m; sourceTree = "<group>"; };
+		EA29483813C58EAF00B1D8D0 /* FileRenameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileRenameViewController.h; sourceTree = "<group>"; };
+		EA29483913C58EAF00B1D8D0 /* FileRenameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileRenameViewController.m; sourceTree = "<group>"; };
+		EA29483A13C58EAF00B1D8D0 /* FileRenameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FileRenameViewController.xib; path = Classes/FileRenameViewController.xib; sourceTree = "<group>"; };
 		EA4E583713BD4FA800BC0665 /* PencilTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PencilTool.h; sourceTree = "<group>"; };
 		EA4E583813BD4FA800BC0665 /* PencilTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PencilTool.m; sourceTree = "<group>"; };
 		EA4E583B13BD52A100BC0665 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
@@ -110,6 +118,10 @@
 				EA99E91313C2E2B2002E775F /* FileList.m */,
 				EAB057D913C3050100C87E4C /* FileListViewController.h */,
 				EAB057DA13C3050100C87E4C /* FileListViewController.m */,
+				EA2947F613C5795B00B1D8D0 /* ActionsMenuController.h */,
+				EA2947F713C5795B00B1D8D0 /* ActionsMenuController.m */,
+				EA29483813C58EAF00B1D8D0 /* FileRenameViewController.h */,
+				EA29483913C58EAF00B1D8D0 /* FileRenameViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 			children = (
 				2899E5210DE3E06400AC0155 /* DudelViewController.xib */,
 				EA99E89313C2B657002E775F /* FontSizeController.xib */,
+				EA29483A13C58EAF00B1D8D0 /* FileRenameViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Dudel-Info.plist */,
 			);
@@ -217,6 +230,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* DudelViewController.xib in Resources */,
 				EA99E89513C2B657002E775F /* FontSizeController.xib in Resources */,
+				EA29483C13C58EAF00B1D8D0 /* FileRenameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +253,8 @@
 				EA99E89413C2B657002E775F /* FontSizeController.m in Sources */,
 				EA99E91413C2E2B2002E775F /* FileList.m in Sources */,
 				EAB057DB13C3050100C87E4C /* FileListViewController.m in Sources */,
+				EA2947F813C5795B00B1D8D0 /* ActionsMenuController.m in Sources */,
+				EA29483B13C58EAF00B1D8D0 /* FileRenameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

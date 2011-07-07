@@ -10,8 +10,10 @@
 
 #import "DudelView.h"
 #import "Tool.h"
+#import "FileRenameViewController.h"
 
-@interface DudelViewController : UIViewController <ToolDelegate, DudelViewDelegate, UIPopoverControllerDelegate> {
+@interface DudelViewController : UIViewController <ToolDelegate, DudelViewDelegate, UIPopoverControllerDelegate, 
+UISplitViewControllerDelegate, UIAlertViewDelegate, FileRenameViewControllerDelegate> {
 	id <Tool> currentTool;
 	IBOutlet DudelView *dudelView;
 	IBOutlet UIBarButtonItem *textButton;
@@ -25,6 +27,7 @@
 	CGFloat strokeWidth;
 	UIFont	*font;
 	UIPopoverController *currentPopover;
+	IBOutlet UIToolbar *toolbar;
 }
 @property (nonatomic, retain) id <Tool> currentTool;
 @property (nonatomic, retain) UIColor *strokeColor;
@@ -50,5 +53,7 @@
 - (void)handleDismissedPopoverController:(UIPopoverController *)popoverController;
 - (BOOL)saveCurrentToFile:(NSString *)filename;
 - (BOOL)loadFromFile:(NSString *)filename;
+
+- (IBAction)popoverActionsMenu:(id)sender;
 @end
 

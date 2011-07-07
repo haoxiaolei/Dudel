@@ -8,11 +8,15 @@
 
 #import "DudelAppDelegate.h"
 #import "DudelViewController.h"
+#import "FileListViewController.h"
+#import "FileList.h"
 
 @implementation DudelAppDelegate
 
 @synthesize window;
 @synthesize viewController;
+@synthesize fileListViewController;
+@synthesize splitViewController;
 
 
 #pragma mark -
@@ -21,9 +25,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after app launch. 
-    [self.window addSubview:viewController.view];
+    [self.window addSubview:splitViewController.view];
     [self.window makeKeyAndVisible];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fileListControllerSelectedFile:) name:FileListControllerSelectedFile object:fileListViewController];
 	return YES;
+}
+
+- (void)fileListControllerSelectedFile:(NSNotification *)n {
+	NSString *oldFilename = [FileList sharedFileList].currentFile;
+	[viewController saveCurrentToFile:oldFilename];
+	NSString *filename = [[n userInfo] objectForKey:FileListControllerFilename];
+	[FileList sharedFileList].currentFile = filename;
+	[viewController loadFromFile:filename];
 }
 
 
@@ -61,7 +74,8 @@
 
 
 - (void)dealloc {
-    [viewController release];
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+    [splitViewController release];
     [window release];
     [super dealloc];
 }

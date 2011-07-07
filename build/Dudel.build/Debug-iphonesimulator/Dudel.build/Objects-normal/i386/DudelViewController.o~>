@@ -1,0 +1,9 @@
+In file included from /Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m:9:
+/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.h:15: error: cannot find protocol declaration for 'FileRenameViewControllerDelegate'
+/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m: In function '-[DudelViewController renameCurrentDocument]':
+/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m:204: error: 'FileRenameViewController' undeclared (first use in this function)
+/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m:204: error: (Each undeclared identifier is reported only once
+/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m:204: error: for each function it appears in.)
+/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m:204: error: 'controller' undeclared (first use in this function)
+/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m: At top level:
+/Users/Haoxiaolei/Documents/Project/Dudel/Classes/DudelViewController.m:220: error: expected ')' before 'FileRenameViewController'
